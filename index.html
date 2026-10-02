@@ -24,9 +24,8 @@
                   Princeton Liu
                 </p>
                 <p>
-                  Hello there! I'm a third-year undergraduate student at <a href="https://www.cs.ucla.edu/">UCLA</a> majoring in Computer Science and Applied Math.
-                  I'm currently working with <a href="https://web.cs.ucla.edu/~palsberg/">Jens Palsberg</a> Quantum Programming Languages group working on
-                  testing quantum programming languages/frameworks's simulator fidelity and speed.
+                  Hello there! I'm a fourth-year undergraduate student at <a href="https://www.cs.ucla.edu/">UCLA</a> majoring in Computer Science and Applied Math.
+                  I'm currently working with <a href="https://sites.google.com/view/haydenschaeffer/">Hayden Schaeffer</a>'s group working on approximating families of fluid operators using machine learning.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:hiprincetonliu@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -46,10 +45,39 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Projects</h2>
                 <p>
-                  I'm interested in quantum computing, programming languages, and computer vision!
+                  I'm interested in fluid dynamics, programming languages, and machine learning!
                   <!-- I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>. -->
                 </p>
               </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one" style="display:flex;align-items:center">
+                  <a href="images/Multi_FNO_4.png" style="width:100%"><img src='images/Multi_FNO_4.png' width=100%></a>
+                </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Machine Learning for Families of Fluid Operators</span>
+                <br>
+                <strong>Princeton Liu</strong>,
+                Joseph Wang,
+                <a href="https://sites.google.com/umn.edu/frank-cole/about">Frank Cole</a>,
+                <a href="https://adrienweihs.figma.site/">Adrien Weihs</a>,
+                <a href="https://sites.google.com/view/haydenschaeffer/">Hayden Schaeffer</a>
+                <br>
+                <a href="https://ww3.math.ucla.edu/research-areas/computational-applied-mathematics-cam/">Computational and Applied Math REU</a> @ UCLA, 2026
+                <br>
+                <a href="projects/Multi_Operator_Learning.pdf">project slides</a>
+                <p></p>
+                <p>
+                Proposed a <strong>lifted Multi-FNO</strong> to predict fluid flows across viscosities <strong>~4,600x faster</strong> than numerical solvers.
+                Cut L2 error from <strong>16.8% → 9.0%</strong> by fusing branches in latent space.
+                Diagnosed <strong>branch collapse</strong> in multi-branch FNOs and sped up dataset generation by <strong>3.2x</strong> with a parallel pseudo-spectral solver.
+                </p>
+            </td>
             </tr>
           </tbody></table>
 
@@ -129,12 +157,58 @@
             </td>
             </tr>
           </tbody></table>
-          
+
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one" style="display:flex;align-items:center">
+                  <a href="images/Content_Moderation_v2.png" style="width:100%"><img src='images/Content_Moderation_v2.png' width=100%></a>
+                </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Context-Aware LLM Content Moderation</span>
+                <br>
+                Sherine Chally, Arjen Singh, <strong>Princeton Liu</strong>, Jason Cheng, Brian Yang
+                <br>
+                <a href="projects/Content_Moderation.pdf">project report</a> /
+                <a href="https://github.com/sherinehannahchally/CS263_FinalProject_ContentModeration">project repository</a>
+                <p></p>
+                <p>
+                Built a <strong>dual-model system</strong> pairing a chatbot with an <strong>LLM supervisor</strong> (Llama 3) that screens rolling conversation history for harmful escalation.
+                Raised early escalation detection from <strong>24% → 81%</strong> over the top-F1 baseline (HateBERT) using an 8B supervisor.
+                </p>
+            </td>
+            </tr>
+          </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <a href="images/attention_gru_results_full.png"><img src='images/attention_gru_results_full.png' width=100%></a>
+                  <a href="images/Lorenz_K_Means.png"><img src='images/Lorenz_K_Means.png' width=100%></a>
+                </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Tokenization Schemes for Autoregressive PDE Transformers</span>
+                <br>
+                <a href="https://github.com/pytorch/pytorch">PyTorch</a>,
+                <a href="https://arxiv.org/pdf/1706.03762">Transformers</a>
+                <br>
+                <a href="projects/Tokenization_Schemes.pdf">project report</a>
+                <p></p>
+                <p>
+                Compared <strong>five tokenizers</strong> for autoregressive Lorenz system prediction and found a <strong>19x</strong> gap in per-step loss across models.
+                Showed the top per-token-accuracy scheme drifted off the Lorenz attractor with <strong>10x worse</strong> rollout error.
+                </p>
+            </td>
+            </tr>
+          </tbody></table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one" style="display:flex;align-items:center">
+                  <a href="images/GRU_ResAttn_input.png" style="width:100%"><img src='images/GRU_ResAttn_input.png' width=100%></a>
                 </div>
             </td>
             <td style="padding:8px;width:80%;vertical-align:middle">
@@ -143,7 +217,7 @@
                 <a href="https://arxiv.org/pdf/1412.3555">GRUs</a>,
                 <a href="https://arxiv.org/pdf/1706.03762">Attention</a>
                 <br>
-                <a href="https://drive.google.com/file/d/1yXD35cCIQ2w7ipMiZjICsA0h5Fd3RePv/view?usp=sharing">project manuscript, results, and code</a>
+                <a href="projects/Neural_Speech_Decoder.pdf">project manuscript, results, and code</a>
                 <!-- <a href="https://github.com/princetonliu/clip-visualizer">project repository</a> -->
                 <p></p>
                 <p>
@@ -153,12 +227,35 @@
             </td>
             </tr>
           </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <a href="images/DP_Backward_Induction.png"><img src='images/DP_Backward_Induction.png' width=100%></a>
+                </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Exact Dynamic Programming vs. Deep RL on Finite-Horizon MDPs</span>
+                <br>
+                <a href="https://github.com/pytorch/pytorch">PyTorch</a>,
+                <a href="https://arxiv.org/pdf/1509.06461">Double DQN</a>
+                <br>
+                <a href="projects/DP_vs_Deep_RL.pdf">project report</a>
+                <p></p>
+                <p>
+                Modeled optimal execution on a prediction market as a <strong>finite-horizon MDP</strong> over <strong>6,331</strong> real episodes, solved exactly by <strong>backward induction</strong>.
+                Trained a <strong>Double DQN</strong> with experience replay, target networks, and reward shaping on feature-engineered states.
+                </p>
+            </td>
+            </tr>
+          </tbody></table>
           
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <a href="images/Anemia_SVM.png"><img src='images/Anemia_SVM.png' width=100%></a>
+                  <a href="images/Anemia_SVM_1.png"><img src='images/Anemia_SVM_1.png' width=100%></a>
                 </div>
             </td>
             <td style="padding:8px;width:80%;vertical-align:middle">
